@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:text="Registro de usuario"
+
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:textSize="25dp"
+
+                    />
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Nombre:"
+                    android:textColor="@android:color/background_dark"
+
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/EditT_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre"
+                    android:inputType="textCapWords"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Apellido:"
+                    android:textColor="@android:color/background_dark"
+
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/EditT_apellido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/apellido"
+                    android:inputType="text|textCapWords"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Numero Celular"
+                    android:textColor="@android:color/background_dark"
+
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/EditT_rut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/NC"
+                    android:inputType="number"
+
+                    android:maxLength="9"
+                    android:minEms="9"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Contraseña"
+                    android:textColor="@android:color/background_dark"
+
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/EditT_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pasword"
+                    android:inputType="text"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="correo"
+                    android:textColor="@android:color/background_dark"
+
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/EditT_secreta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese nombre primera mascota"
+                    android:inputType="text|textCapWords"
+
+                    />
+
+                <Button
+                    android:id="@+id/Btn_registrar"
+                    android:layout_width="265dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginTop="15dp"
+                    android:background="#FF3F51B5"
+                    android:text="Registrarse"
+                    android:textColor="@android:color/background_light" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
